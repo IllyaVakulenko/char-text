@@ -27,4 +27,5 @@ def print_char(char_matrix):
 text = "0"
 
 for char in text:
-    print_char(char_map[char])
+    if char in char_map:
+        print_char(char_map[char])
