@@ -1,4 +1,4 @@
-from char_map import char_map
+from char_map import CHAR_MAP
 
 THEME = {
     "background": " ",
@@ -18,7 +18,7 @@ def print_char(char_matrix):
 text = "40123?"
 
 for char in text:
-    if char in char_map:
-        print_char(char_map[char])
+    if char in CHAR_MAP:
+        print_char(CHAR_MAP[char])
     else:
-        print_char(char_map["?"])
+        print_char(CHAR_MAP["?"])
