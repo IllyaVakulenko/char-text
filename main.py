@@ -1,12 +1,11 @@
+from os import getenv
+from dotenv import load_dotenv
 from char_map import CHAR_MAP
 
-THEME = {
-    "background": " ",
-    "foreground": "#"
-}
+load_dotenv()
 
-bg = THEME["background"]
-fg = THEME["foreground"]
+bg = getenv('BACKGROUND', ' ')
+fg = getenv('FOREGROUND', '#')
 
 
 def print_char(char_matrix):
