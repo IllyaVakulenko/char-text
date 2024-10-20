@@ -36,3 +36,5 @@ text = "0?"
 for char in text:
     if char in char_map:
         print_char(char_map[char])
+    else:
+        print_char(char_map["?"])
